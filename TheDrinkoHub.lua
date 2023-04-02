@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua%22))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("DrinkoHub", "Midnight")
 
 local Tab1 = Window:NewTab("Main")
@@ -12,7 +12,7 @@ local Section4 = Tab3:NewSection("Walkspeed And JumpPower")
 
 
 Section1:NewButton("Fly", "Makes you flying", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua%22))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))()
 
     Fly(true)
 end)
@@ -24,11 +24,11 @@ Section2:NewToggle("Super Human", "Increase You're WalkSpeed and JumpPower", fun
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-
+        
     end
 end)
 Section3:NewButton("InfiniteYield", "Gives you admin Power", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source%27),true))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
 Section4:NewSlider("WalkSpeed", "Customize you're WalkSpeed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
